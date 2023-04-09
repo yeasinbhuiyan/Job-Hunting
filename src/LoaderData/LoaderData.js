@@ -1,11 +1,17 @@
 
-const loadData=async()=>{
+
+const loadData= async () =>{
  const res = await fetch('jobCategory.json')
- const data = await res.json()
+const products = await res.json()
+
+console.log(products)
+ 
 
 
- return data 
+ return products
 }
+
+
 
 
 

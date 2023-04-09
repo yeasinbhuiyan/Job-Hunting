@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeatureCart.css'
+import { Link } from 'react-router-dom';
 
 const FeatureCart = ({feature}) => {
     console.log(feature)
@@ -28,7 +29,7 @@ const FeatureCart = ({feature}) => {
                     
                 </div>
                 <div>
-                    <button className='btn btn-info'>View Details</button>
+                    <Link to={`/jobDetails/${feature,id}`} className='btn btn-info'>View Details</Link>
                 </div>
 
             </div>

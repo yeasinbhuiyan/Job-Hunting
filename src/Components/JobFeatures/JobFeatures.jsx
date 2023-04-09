@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { loadData } from '../../LoaderData/LoaderData';
-import { data } from 'autoprefixer';
+// import { loadData } from '../../LoaderData/LoaderData';
+// import { data } from 'autoprefixer';
 import FeatureCart from './FeatureCart';
 
 const JobFeatures = () => {
