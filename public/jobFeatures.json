@@ -1,0 +1,34 @@
+[
+    {
+        "id": "133b2614a5aba11",
+        "name": "Google LLC",
+        "image": "../src/assets/All Images/google-1-1 1.png",
+        "job_position":"Technical Database Engineer",
+        "location": "Cumilla, Bangladesh",
+        "salary": "50k-70k"
+        },
+    {
+        "id": "2233b26ad5aba31",
+        "name": "Netflix",
+        "image": "../src/assets/All Images/netflix-4 1.png",
+        "job_position":"Senior Product Designer",
+        "location": "Chottogram, Bangladesh",
+        "salary": "30k-40k"
+        },
+    {
+        "id": "3233b2614ad5ab11",
+        "name": "Tesla",
+        "image": "../src/assets/All Images/tesla-9 1.png",
+        "job_position":"Software Engineer",
+        "location": "Feni, Bangladesh",
+        "salary": "40k-50k"
+        },
+    {
+        "id": "4233b2614ad5aba3",
+        "name": "Google LLC",
+        "image": "../src/assets/All Images/google-1-1 1.png",
+        "job_position":"Technical Database Engineer",
+        "location": "Dhaka, Bangladesh",
+        "salary": "20k-30k"
+        }
+]
