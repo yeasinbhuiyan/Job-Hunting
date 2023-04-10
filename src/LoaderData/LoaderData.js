@@ -1,10 +1,10 @@
 
 
 const loadData= async () =>{
- const res = await fetch('jobCategory.json')
+ const res = await fetch('jobFeatures.json')
 const products = await res.json()
 
-console.log(products)
+
  
 
 

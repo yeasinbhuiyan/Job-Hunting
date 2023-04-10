@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { loadData } from '../../LoaderData/LoaderData';
-// import { data } from 'autoprefixer';
+
 import FeatureCart from './FeatureCart';
 
 const JobFeatures = () => {
@@ -14,7 +13,6 @@ const JobFeatures = () => {
     },[])
 
 
-    console.log(Features)
     return (
         <section className='all-container'>
             <div className='text-center mb-6'>
@@ -25,7 +23,7 @@ const JobFeatures = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 {
-                    Features && Features.map(feature => <FeatureCart feature={feature}></FeatureCart> )
+                    Features && Features.map(feature => <FeatureCart key={feature.id} feature={feature}></FeatureCart> )
                 }
 
                 

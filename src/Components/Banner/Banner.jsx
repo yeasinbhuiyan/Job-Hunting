@@ -6,7 +6,7 @@ import JobFeatures from '../JobFeatures/JobFeatures';
 
 const Banner = () => {
     const jobCategoryData = useLoaderData()
-    console.log(jobCategoryData)
+    // console.log(jobCategoryData)
     return (
        <div>
          <div className='bg-gray-100 flex justify-between items-center all-container'>

@@ -3,7 +3,7 @@ import './FeatureCart.css'
 import { Link } from 'react-router-dom';
 
 const FeatureCart = ({feature}) => {
-    console.log(feature)
+    
     const {image,id,name,location,job_position,salary} = feature
     
     return (
@@ -29,7 +29,7 @@ const FeatureCart = ({feature}) => {
                     
                 </div>
                 <div>
-                    <Link to={`/jobDetails/${feature,id}`} className='btn btn-info'>View Details</Link>
+                    <Link to={`/jobDetails/${id}`} className='btn btn-info'>View Details</Link>
                 </div>
 
             </div>

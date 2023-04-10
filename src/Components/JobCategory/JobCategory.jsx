@@ -12,7 +12,7 @@ const JobCategory = ({jobCategoryData}) => {
             <div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 '>
                     {
-                        jobCategoryData.map(JobCategory => <JobCategoryCart JobCategory={JobCategory}></JobCategoryCart>)
+                        jobCategoryData.map(JobCategory =>  <JobCategoryCart key={JobCategory.id} JobCategory={JobCategory}></JobCategoryCart>)
                     }
                     
                 </div>
