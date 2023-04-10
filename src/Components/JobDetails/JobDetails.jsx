@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { addToDb } from '../../Utitilitis/fakeDb';
 
 const JobDetails = () => {
     const FeaturesId = useParams()
@@ -16,10 +17,13 @@ const JobDetails = () => {
         }
     }, [y])
 
+const handleApplyJob=(id)=>{
+
+addToDb(id)
+}
 
 
-
-    const { id, name, job_description, job_position,job_responsibility,educational_requirements,experiences, phone, email } = details
+    const { id, name, job_description, job_position, salary, address, job_responsibility, educational_requirements, experiences, phone, email } = details
 
 
 
@@ -44,10 +48,27 @@ const JobDetails = () => {
 
             </div>
 
-            <div>
+            <div className='bg-indigo-100 bg-opacity-70 m-10 p-4'>
 
-              
 
+                <h1 className='my-3 text-xl font-bold'>Job Details</h1>
+                <hr />
+
+                <h2 className="font-bold">Salary: <span className='text-sm'>{salary} (Per Month)</span></h2>
+
+                <h2 className="font-bold">Job Title: <span className='text-sm'>{job_position}</span></h2>
+
+                <h1 className='my-3 text-xl font-bold'>Contact Information</h1>
+                <hr />
+
+
+                <h2 className="font-bold">Phone: <span className='text-sm'>{phone}</span></h2>
+                <h2 className="font-bold">Phone: <span className='text-sm'>{email}</span></h2>
+                <h2 className="font-bold">Address: <span className='text-sm'>{address}</span></h2>
+
+                <div className='mt-5'>
+                    <button onClick={()=>handleApplyJob(id)} className='btn btn-info'>Apply Now</button>
+                </div>
             </div>
 
         </div>

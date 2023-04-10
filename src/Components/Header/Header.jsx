@@ -11,10 +11,10 @@ const Header = () => {
             </div>
 
             <div className=''>
-                <NavLink className={({isActive})=>isActive? 'text-blue-600' : 'text-black'}>Home</NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-blue-600' : 'text-black'}>Statistics</NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-blue-600' : 'text-black'}>Applied Job</NavLink>
-                <NavLink className={({isActive})=>isActive? 'text-blue-600' : 'text-black'}>Blog</NavLink>
+                <NavLink to='/' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Home</NavLink>
+                <NavLink to='/statics' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Statistics</NavLink>
+                <NavLink to='/applyJob' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Applied Job</NavLink>
+                <NavLink to='/blog' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Blog</NavLink>
             </div>
 
 
@@ -24,7 +24,7 @@ const Header = () => {
 
 
             </div>
-            
+
         </div>
     );
 };
