@@ -1,6 +1,7 @@
 import React from 'react';
 import './FeatureCart.css'
 import { Link } from 'react-router-dom';
+import { MapPinIcon,CurrencyDollarIcon } from '@heroicons/react/24/solid'
 
 const FeatureCart = ({feature}) => {
     
@@ -23,9 +24,9 @@ const FeatureCart = ({feature}) => {
 
                 <div className='flex items-center gap-6 my-3'>
 
-                    <p>{location}</p>
+                    <p className='flex items-center'><MapPinIcon className="h-4 items-center w-4 text-indigo-400" />{location}</p>
 
-                    <p>Salary: {salary}</p>
+                    <p className='flex items-center'><CurrencyDollarIcon className="h-4 items-center w-4 text-indigo-400" />Salary: {salary}</p>
                     
                 </div>
                 <div>

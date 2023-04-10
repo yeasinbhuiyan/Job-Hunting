@@ -13,7 +13,7 @@ const App = () => {
     <>
 
   
-<Header></Header>
+{/* <Header></Header> */}
 <Outlet></Outlet>
 
       

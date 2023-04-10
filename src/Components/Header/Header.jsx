@@ -10,7 +10,7 @@ const Header = () => {
                 <h1 className='font-bold text-xl'>Job <span className='text-indigo-500'>Hunting</span></h1>
             </div>
 
-            <div className=''>
+            <div className='font-semibold'>
                 <NavLink to='/' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Home</NavLink>
                 <NavLink to='/statics' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Statistics</NavLink>
                 <NavLink to='/applyJob' className={({ isActive }) => isActive ? 'text-blue-600' : 'text-black'}>Applied Job</NavLink>

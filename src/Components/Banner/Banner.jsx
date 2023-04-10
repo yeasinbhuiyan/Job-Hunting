@@ -4,11 +4,13 @@ import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
 import JobFeatures from '../JobFeatures/JobFeatures';
 
+
 const Banner = () => {
     const jobCategoryData = useLoaderData()
     // console.log(jobCategoryData)
     return (
        <div>
+       
          <div className='bg-gray-100 flex justify-between items-center all-container'>
             <div>
                 <div className='text-7xl font-bold'>
@@ -25,7 +27,7 @@ const Banner = () => {
 
 
             <div  className='bottom-0'>
-                <img width={'500px'} src={"All Images/P3OLGJ1 copy 1.png"} alt="" />
+                <img width={'500px'} src={"All-Images/P3OLGJ1 copy 1.png"} alt="" />
             </div>
 
         </div>

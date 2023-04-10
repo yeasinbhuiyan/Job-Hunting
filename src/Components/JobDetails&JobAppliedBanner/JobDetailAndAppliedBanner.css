@@ -1,0 +1,8 @@
+.detailsAndApplied-container{
+    /* background-image: url('../../../public/All-Images/Vector-1.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-width: 100vh; */
+    /* min-height: 100vh; */
+    width: fit-content;
+}
