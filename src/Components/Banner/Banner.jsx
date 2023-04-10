@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImg from '../../../public/All Images/P3OLGJ1 copy 1.png'
+// import bannerImg from '../../../public/'
 import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
 import JobFeatures from '../JobFeatures/JobFeatures';
@@ -25,7 +25,7 @@ const Banner = () => {
 
 
             <div  className='bottom-0'>
-                <img width={'500px'} src={bannerImg} alt="" />
+                <img width={'500px'} src={"All Images/P3OLGJ1 copy 1.png"} alt="" />
             </div>
 
         </div>

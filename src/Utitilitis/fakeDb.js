@@ -1,46 +1,46 @@
 
 
 const addToDb = (id) => {
-    let shoppingCart = {}
+    let JobApplyCart = {}
     const get = JSON.parse(localStorage.getItem('job-cart'))
     if (get) {
-        shoppingCart = get
+        JobApplyCart = get
     }
-    const value = shoppingCart[id]
+    const value = JobApplyCart[id]
 
     if (value) {
         let sum = value + 1
-        shoppingCart[id] = sum
+        JobApplyCart[id] = sum
 
     }
     else {
-        shoppingCart[id] = 1 
+        JobApplyCart[id] = 1 
 
     }
 
-    localStorage.setItem('job-cart' , JSON.stringify(shoppingCart ))
+    localStorage.setItem('job-cart' , JSON.stringify(JobApplyCart ))
 }
 
 
 const getStoredCart =() =>{
-    let shoppingCart = {}
+    let JobApplyCart = {}
 
     const cartData = JSON.parse(localStorage.getItem('job-cart'))
     if(cartData){
-        shoppingCart = cartData
+        JobApplyCart = cartData
 
     }
-    return shoppingCart
+    return JobApplyCart
 }
 
 
 const removeFromDb=(id)=>{
 
-    const storeShoppingCart =JSON.parse(localStorage.getItem('job-cart'))
-    if(storeShoppingCart){
-        if(id in storeShoppingCart){
-            delete storeShoppingCart[id]
-            localStorage.setItem('job-cart',JSON.stringify(storeShoppingCart))
+    const storeJobApplyCart =JSON.parse(localStorage.getItem('job-cart'))
+    if(storeJobApplyCart){
+        if(id in storeJobApplyCart){
+            delete storeJobApplyCart[id]
+            localStorage.setItem('job-cart',JSON.stringify(storeJobApplyCart))
         }
     }
 
