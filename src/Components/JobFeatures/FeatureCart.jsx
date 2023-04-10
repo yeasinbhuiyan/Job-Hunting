@@ -16,11 +16,11 @@ const FeatureCart = ({feature}) => {
                 <p>{name}</p>
                </div>
 
-                <div className='flex gap-7'>
+                {/* <div className='flex gap-7'>
                     <button className='btn btn-info'>Onsite</button>
                     <button className='btn btn-info'>Outsite</button>
 
-                </div>
+                </div> */}
 
                 <div className='flex items-center gap-6 my-3'>
 

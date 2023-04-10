@@ -69,7 +69,7 @@ const JobDetails = () => {
 
 
                     <h2 className="font-bold">Phone: <span className='text-sm'>{phone}</span></h2>
-                    <h2 className="font-bold">Phone: <span className='text-sm'>{email}</span></h2>
+                    <h2 className="font-bold">Email: <span className='text-sm'>{email}</span></h2>
                     <h2 className="font-bold">Address: <span className='text-sm'>{address}</span></h2>
 
                     <div className='mt-5'>

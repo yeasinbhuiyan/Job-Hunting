@@ -10,3 +10,7 @@
 p{
   @apply text-sm
 }
+
+.btn-info{
+  @apply bg-gradient-to-r from-blue-400 to-purple-500 p-3 rounded-lg text-white font-semibold
+}

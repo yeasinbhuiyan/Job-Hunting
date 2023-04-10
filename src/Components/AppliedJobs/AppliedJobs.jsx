@@ -33,7 +33,7 @@ const AppliedJobs = () => {
             <div className='grid lg:grid-cols-1'>
                 <div className='mx-auto w-[70%] gap-7 m-10'>
                     {
-                        storeJobCart && storeJobCart.map(job => <AppliedStoreCart job={job}></AppliedStoreCart>)
+                        storeJobCart && storeJobCart.map(job => <AppliedStoreCart key={job.id} job={job}></AppliedStoreCart>)
                     }
 
                 </div>

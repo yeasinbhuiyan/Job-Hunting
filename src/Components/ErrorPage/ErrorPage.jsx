@@ -1,6 +1,8 @@
 import { FaceFrownIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import { Link, useRouteError } from 'react-router-dom';
+import { ArrowLeftCircleIcon } from '@heroicons/react/24/solid'
+
 
 const ErrorPage = () => {
     const {error} = useRouteError()
@@ -17,7 +19,7 @@ const ErrorPage = () => {
               {error?.message}
             </p>
             <Link to='/' className='btn'>
-              Back to homepage
+             <ArrowLeftCircleIcon className='w-10 h-10'></ArrowLeftCircleIcon>
             </Link>
           </div>
         </div>

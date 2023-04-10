@@ -3,6 +3,7 @@ import React from 'react';
 import JobCategory from '../JobCategory/JobCategory';
 import { useLoaderData } from 'react-router-dom';
 import JobFeatures from '../JobFeatures/JobFeatures';
+import Header from '../Header/Header';
 
 
 const Banner = () => {
@@ -10,9 +11,10 @@ const Banner = () => {
     // console.log(jobCategoryData)
     return (
        <div>
+        <Header></Header>
        
-         <div className='bg-gray-100 flex justify-between items-center all-container'>
-            <div>
+         <div className='bg-gray-100 grid grid-cols-1 lg:grid-cols-2 md:pl-28'>
+            <div className='m-6'>
                 <div className='text-7xl font-bold'>
                     One Step <br /> Closer To Your <br />
                     <span className='text-indigo-400'> Dream Job</span>
@@ -26,7 +28,7 @@ const Banner = () => {
             </div>
 
 
-            <div  className='bottom-0'>
+            <div className='bottom-0'>
                 <img width={'500px'} src={"All-Images/P3OLGJ1 copy 1.png"} alt="" />
             </div>
 
@@ -41,6 +43,7 @@ const Banner = () => {
 
             <div>
                 <JobFeatures></JobFeatures>
+                
 
             </div>
 

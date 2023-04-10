@@ -11,6 +11,7 @@ import JobDetails from './Components/JobDetails/JobDetails';
 import {  productsAndCartData } from './LoaderData/LoaderData';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Statics from './Components/Statics/Statics';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         loader : ()=>fetch('/jobFeatures.json'),
 
       },
+      {
+        path: '/statics',
+        element: <Statics></Statics>
+      }
     ]
   }
 ])
