@@ -13,6 +13,8 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Statics from './Components/Statics/Statics';
 import Blog from './Components/Question/Blog';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +55,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer></ToastContainer>
 
   </React.StrictMode>,
 )

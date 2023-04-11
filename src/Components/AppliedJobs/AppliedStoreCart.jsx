@@ -5,7 +5,7 @@ import { MapPinIcon,CurrencyDollarIcon } from '@heroicons/react/24/solid'
 
 
 const AppliedStoreCart = ({ job }) => {
-    const { job_position, name, location, salary, image,id } = job
+    const { job_position, name, location, salary, image,id,job_type } = job
     return (
    
            
@@ -15,7 +15,10 @@ const AppliedStoreCart = ({ job }) => {
 
                 <div>
                     <h1 className='text-xl font-bold'>{job_position}</h1>
+
                     <h4 className='font-medium'>{name}</h4>
+
+                    <p className='text-sm text-cyan-700 font-semibold'>{job_type}</p>
                     <div className='flex gap-5'>
                     <p className='flex items-center'><MapPinIcon className="h-4 items-center w-4 text-indigo-400" />{location}</p>
 

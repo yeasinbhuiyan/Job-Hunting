@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../../Utitilitis/fakeDb';
 import JobDetailAndAppliedBanner from '../JobDetails&JobAppliedBanner/JobDetailAndAppliedBanner';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const JobDetails = () => {
     const FeaturesId = useParams()
@@ -19,8 +21,13 @@ const JobDetails = () => {
     }, [y])
 
     const handleApplyJob = (id) => {
-
+        
         addToDb(id)
+
+        toast.success("you have Added this product!")
+      
+
+
     }
 
 

@@ -21,7 +21,7 @@ const Banner = () => {
 
                 </div>
 
-                <p className='w-[60%] my-5'>Explore thousands of job opportunities with all the information you  need. Its your future. Come find it. Manage all your job application from start to finish.</p>
+                <p className='w-[60%] my-5'>We have many job related information in this website if you want you can see this information from our project and from here you can apply for different jobs.</p>
                 <div className='mb-3'>
                     <button className='btn btn-info'>Get Started</button>
                 </div>

@@ -49,9 +49,9 @@
         "experiences": "2 Years in this field."
     },
     {
-        "id": "4233b26ad5aba31",
-        "name": "Amazone",
-        "image": "All-Images/amazon-png-logo-vector-1.png",
+        "id": "6233b26ad5aa31",
+        "name": "Netflix",
+        "image": "All-Images/netflix-4 1.png",
         "job_position": "Senior Product Designer",
         "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
@@ -61,9 +61,10 @@
         "address": "Vancouver, British Columbia",
         "location": "British Columbia ,CANADA",
         "salary": "30k-40k",
-        "job_type" : "Remote",
-        "experiences": "5 Years in this field."
+        "experiences": "5 Years in this field.",
+        "job_type" : "Remote"
     },
+   
     {
         "id": "5233b26ad5a5ba31",
         "name": "Flifcart",
@@ -80,10 +81,11 @@
         "job_type" : "Onsite",
         "experiences": "5 Years in this field."
     },
+  
     {
-        "id": "6233b26ad5aa31",
-        "name": "Netflix",
-        "image": "All-Images/netflix-4 1.png",
+        "id": "4233b26ad5aba31",
+        "name": "Amazone",
+        "image": "All-Images/amazon-png-logo-vector-1.png",
         "job_position": "Senior Product Designer",
         "job_description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
         "job_responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
@@ -93,7 +95,7 @@
         "address": "Vancouver, British Columbia",
         "location": "British Columbia ,CANADA",
         "salary": "30k-40k",
-        "experiences": "5 Years in this field.",
-        "job_type" : "Remote"
+        "job_type" : "Remote",
+        "experiences": "5 Years in this field."
     }
 ]

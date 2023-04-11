@@ -10,7 +10,7 @@ const FeatureCart = ({feature}) => {
     return (
         <div>
             <div className='feature-cart h-full'>
-                <img className='h-32 w-40' src={image} alt="" />
+                <img className='h-20 w-40' src={image} alt="" />
                <div className='my-5'>
                <h1 className='text-xl font-bold'>{job_position}</h1>
                 <p>{name}</p>

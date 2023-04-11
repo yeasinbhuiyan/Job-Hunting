@@ -6,7 +6,7 @@ const JobCategory = ({jobCategoryData}) => {
         <section className='all-container my-36'>
             <div className='text-center my-10'>
                 <h1 className='my-2 text-2xl font-bold'>Job Category List</h1>
-                <p className='text-sm'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <p className='text-sm'>Here are some common job categories that you may find in various industries</p>
             </div>
 
             <div>

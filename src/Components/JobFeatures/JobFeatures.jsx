@@ -22,7 +22,8 @@ const JobFeatures = () => {
         <section className='all-container'>
             <div className='text-center mb-6'>
                 <h1 className='text-2xl font-bold'>Featured Jobs</h1>
-                <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <p>
+                    Here are some common job descriptions</p>
             </div>
 
 
