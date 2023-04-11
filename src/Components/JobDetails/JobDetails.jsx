@@ -40,8 +40,8 @@ const JobDetails = () => {
             <div className='mb-52'>
                 <JobDetailAndAppliedBanner></JobDetailAndAppliedBanner>
            
-                    <img className='absolute right-0 top-0' src="../../../public/All-Images/Vector-1.png" alt="" />
-                    <img className='absolute left-0 ' src={"../../../public/All-Images/Vector.png"} alt="" />
+                    {/* <img className='absolute right-0 top-0' src={"/All-Images/Vector-1.png" }alt="" />
+                    <img className='absolute left-0 ' src={"/All-Images/Vector.png"} alt="" /> */}
                
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 all-container'>
