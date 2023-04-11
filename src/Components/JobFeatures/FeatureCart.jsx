@@ -5,7 +5,7 @@ import { MapPinIcon,CurrencyDollarIcon } from '@heroicons/react/24/solid'
 
 const FeatureCart = ({feature}) => {
     
-    const {image,id,name,location,job_position,salary} = feature
+    const {image,id,name,location,job_position,salary,job_type} = feature
     
     return (
         <div>
@@ -13,14 +13,12 @@ const FeatureCart = ({feature}) => {
                 <img className='h-20 w-40' src={image} alt="" />
                <div className='my-5'>
                <h1 className='text-xl font-bold'>{job_position}</h1>
+
                 <p>{name}</p>
+                <p className='text-cyan-600 font-semibold'>{job_type}</p>
                </div>
 
-                {/* <div className='flex gap-7'>
-                    <button className='btn btn-info'>Onsite</button>
-                    <button className='btn btn-info'>Outsite</button>
-
-                </div> */}
+               
 
                 <div className='flex items-center gap-6 my-3'>
 
