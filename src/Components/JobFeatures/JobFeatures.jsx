@@ -3,14 +3,19 @@ import React, { useEffect, useState } from 'react';
 import FeatureCart from './FeatureCart';
 
 const JobFeatures = () => {
-  
+
     const [Features, setFeatures] = useState([])
 
-    useEffect(()=>{
-        fetch('jobFeatures.json')
-        .then(res=> res.json())
-        .then(data => setFeatures(data))
-    },[])
+    const [allBtn, setAllBtn] = useState(false)
+
+
+
+    // start useEffect job features 
+    useEffect(() => {
+        fetch('/jobFeatures.json')
+            .then(res => res.json())
+            .then(data => setFeatures(data))
+    }, [])
 
 
     return (
@@ -22,16 +27,23 @@ const JobFeatures = () => {
 
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+
+
                 {
-                    Features && Features.map(feature => <FeatureCart key={feature.id} feature={feature}></FeatureCart> )
+                    !allBtn && Features.slice(0, 4).map(feature => <FeatureCart key={feature.id} feature={feature}></FeatureCart>)
+                }
+                {
+                    allBtn && Features.map(feature => <FeatureCart key={feature.id} feature={feature}></FeatureCart>)
                 }
 
-                
+
             </div>
 
-            <div className='text-center my-7'>
-                <button className='btn btn-info'>See More </button>
-            </div>
+            {
+                !allBtn && <div className='text-center my-7'>
+                    <button onClick={() => setAllBtn(!allBtn)} className='btn btn-info'>See More </button>
+                </div>
+            }
         </section>
     );
 };

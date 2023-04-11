@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             <Bars3Icon onClick={() => setIsOpen(!isOpen)} className='md:hidden w-6 h-6'></Bars3Icon>
             {isOpen &&
-                <div className='duration-300 font-semibold gap-6 flex flex-col left-0 absolute top-0  bg-gray-300 p-6 md:hidden'>
+                <div className='duration-1000 font-semibold gap-6 flex flex-col left-0 absolute top-0  bg-gray-300 p-6 md:hidden'>
 
                     <div className="mr-32">
                         <XMarkIcon onClick={() => setIsOpen(!isOpen)} className='w-6 h-6'></XMarkIcon>

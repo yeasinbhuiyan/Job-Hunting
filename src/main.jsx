@@ -12,6 +12,7 @@ import {  productsAndCartData } from './LoaderData/LoaderData';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Statics from './Components/Statics/Statics';
+import Blog from './Components/Question/Blog';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/statics',
         element: <Statics></Statics>
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
       }
     ]
   }
