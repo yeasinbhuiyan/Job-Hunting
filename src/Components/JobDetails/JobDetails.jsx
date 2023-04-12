@@ -4,6 +4,7 @@ import { addToDb } from '../../Utitilitis/fakeDb';
 import JobDetailAndAppliedBanner from '../JobDetails&JobAppliedBanner/JobDetailAndAppliedBanner';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
+import { PhoneIcon,BriefcaseIcon,CurrencyDollarIcon,EnvelopeIcon,MapPinIcon } from '@heroicons/react/24/solid'
 
 const JobDetails = () => {
     const FeaturesId = useParams()
@@ -71,17 +72,20 @@ const JobDetails = () => {
                     <h1 className='my-3 text-xl font-bold'>Job Details</h1>
                     <hr />
 
-                    <h2 className="font-bold">Salary: <span className='text-sm'>{salary} (Per Month)</span></h2>
+                    <h2 className="font-bold flex items-center"> <CurrencyDollarIcon className="mr-1 h-3 w-3 text-blue-500" />Salary: <span className='text-sm'>{salary} (Per Month)</span></h2>
 
-                    <h2 className="font-bold">Job Title: <span className='text-sm'>{job_position}</span></h2>
+                    <h2 className="font-bold flex items-center"> <BriefcaseIcon className="mr-1 h-3 w-3 text-blue-500" />Job Title: <span className='text-sm'>{job_position}</span></h2>
 
                     <h1 className='my-3 text-xl font-bold'>Contact Information</h1>
-                    <hr />
 
+                 
+                  <hr />
 
-                    <h2 className="font-bold">Phone: <span className='text-sm'>{phone}</span></h2>
-                    <h2 className="font-bold">Email: <span className='text-sm'>{email}</span></h2>
-                    <h2 className="font-bold">Address: <span className='text-sm'>{address}</span></h2>
+             
+
+                    <h2 className="font-bold flex items-center">  <PhoneIcon className="mr-1 h-3 w-3 text-blue-500" />Phone: <span className='text-sm'>{phone}</span></h2>
+                    <h2 className="font-bold flex items-center"><EnvelopeIcon className="mr-1 h-3 w-3 text-blue-500" />Email: <span className='text-sm'> {email}</span></h2>
+                    <h2 className="font-bold flex items-center"><MapPinIcon className="mr-1 h-3 w-3 text-blue-500" />Address: <span className='text-sm'>{address}</span></h2>
 
                     <div className='mt-5'>
                         <button onClick={() => handleApplyJob(id)} className='btn btn-info'>Apply Now</button>
